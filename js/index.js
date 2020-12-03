@@ -41,13 +41,13 @@ const siteContent = {
 
 // Setting Images
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
 let logo2 = document.getElementById("cta-img");
-logo2.setAttribute('src', siteContent["cta"]["img-src"])
+logo2.setAttribute('src', siteContent["cta"]["img-src"]);
 
 let logo3 = document.getElementById("middle-img");
-logo3.setAttribute('src', siterContent["main-content"] ["middle-img-src"])
+logo3.setAttribute('src', siterContent["main-content"] ["middle-img-src"]);
 
 
 
