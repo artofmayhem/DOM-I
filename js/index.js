@@ -60,26 +60,35 @@ const navItems3 = navItems[3].textContent = siteContent["nav"]["nav-item-4"];
 const navItems4 = navItems[4].textContent = siteContent["nav"]["nav-item-5"];
 const navItems5 = navItems[5].textContent = siteContent["nav"]["nav-item-6"];
 
+navItems.style.color = "green";
+const childNode = document.createElement('a');
+childNode.textContent = "Who Are We";
+navItems.appendChild(childNode);
+
+const secChild = document.createElement('a');
+secChild.textContent = "Visit";
+navItems.prepend(seChild);
+
 
 
 //Setting CTA Section
-let ctaText = document.querySelector('h1')
+const ctaText = document.querySelector('h1')
 ctaText.textContent =  siteContent["cta"]["h1"]
 
-let ctaButton = document.querySelector('button')
+const ctaButton = document.querySelector('button')
 ctaButton.textContent =  siteContent["cta"]["button"]
 
 
 
 //Setting Top Content
-let topContent = document.querySelector('.top-content')
+const topContent = document.querySelector('.top-content')
 topContent.children[0].children[0].textContent = siteContent["main-content"]["features-h4"]
 topContent.children[0].children[1].textContent = siteContent["main-content"]["features-content"]
 topContent.children[1].children[0].textContent = siteContent["main-content"]["about-h4"]
 topContent.children[1].children[1].textContent = siteContent["main-content"]["about-content"]
 
 //Setting Bottom Content
-let bottomContent = document.querySelector('.bottom-content')
+const bottomContent = document.querySelector('.bottom-content')
 bottomContent.children[0].children[0].textContent = siteContent["main-content"]["services-h4"]
 bottomContent.children[0].children[1].textContent = siteContent["main-content"]["services-content"]
 bottomContent.children[1].children[0].textContent = siteContent["main-content"]["product-h4"]
@@ -90,7 +99,7 @@ bottomContent.children[2].children[1].textContent = siteContent["main-content"][
 
 
 //Setting Contact Section
-let contactSec = document.querySelector('.contact');
+const contactSec = document.querySelector('.contact');
 contactSec.children[0].textContent = siteContent["contact"]["contact-h4"] 
 contactSec.children[1].textContent = siteContent["contact"]["address"] 
 contactSec.children[2].textContent = siteContent["contact"]["phone"] 
@@ -99,5 +108,5 @@ contactSec.children[3].textContent = siteContent["contact"]["email"]
 
 
 //Setting Footer Section
-let footerPL = document.querySelector('footer').children[0]
+const footerPL = document.querySelector('footer').children[0]
 footerPL.textContent = siteContent["footer"]["copyright"] 
