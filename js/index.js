@@ -45,5 +45,14 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 let logo2 = document.getElementById("cta-img");
 logo2.setAttribute('src', siteContent["cta"]["img-src"])
 
-let logo3 = document.getElementById("middle-image");
-logo3.setAttribute('src', siterContent["main-cotent"] [""])
+let logo3 = document.getElementById("middle-img");
+logo3.setAttribute('src', siterContent["main-content"] ["middle-img-src"])
+
+//setting nav items
+const navItems = document.querySelectorAll('nav a');
+const navItems0 = navMenu[0].textContent = siteContent["nav"]["nav-item-1"];
+const navItems1 = navMenu[1].textContent = siteContent["nav"]["nav-item-2"];
+const navItems2 = navMenu[2].textContent = siteContent["nav"]["nav-item-3"];
+const navItems3 = navMenu[3].textContent = siteContent["nav"]["nav-item-4"];
+const navItems4 = navMenu[4].textContent = siteContent["nav"]["nav-item-5"];
+const navItems5 = navMenu[5].textContent = siteContent["nav"]["nav-item-6"];
