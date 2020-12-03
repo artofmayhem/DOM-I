@@ -37,22 +37,67 @@ const siteContent = {
   },
 };
 
-// Example: Update the img src for the logo
+
+
+// Setting Images
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-//setting the other images
 let logo2 = document.getElementById("cta-img");
 logo2.setAttribute('src', siteContent["cta"]["img-src"])
 
 let logo3 = document.getElementById("middle-img");
 logo3.setAttribute('src', siterContent["main-content"] ["middle-img-src"])
 
-//setting nav items
+
+
+//Setting Nav Items
 const navItems = document.querySelectorAll('nav a');
-const navItems0 = navMenu[0].textContent = siteContent["nav"]["nav-item-1"];
-const navItems1 = navMenu[1].textContent = siteContent["nav"]["nav-item-2"];
-const navItems2 = navMenu[2].textContent = siteContent["nav"]["nav-item-3"];
-const navItems3 = navMenu[3].textContent = siteContent["nav"]["nav-item-4"];
-const navItems4 = navMenu[4].textContent = siteContent["nav"]["nav-item-5"];
-const navItems5 = navMenu[5].textContent = siteContent["nav"]["nav-item-6"];
+const navItems0 = navItems[0].textContent = siteContent["nav"]["nav-item-1"];
+const navItems1 = navItems[1].textContent = siteContent["nav"]["nav-item-2"];
+const navItems2 = navItems[2].textContent = siteContent["nav"]["nav-item-3"];
+const navItems3 = navItems[3].textContent = siteContent["nav"]["nav-item-4"];
+const navItems4 = navItems[4].textContent = siteContent["nav"]["nav-item-5"];
+const navItems5 = navItems[5].textContent = siteContent["nav"]["nav-item-6"];
+
+
+
+//Setting CTA Section
+let ctaText = document.querySelector('h1')
+ctaText.textContent =  siteContent["cta"]["h1"]
+
+let ctaButton = document.querySelector('button')
+ctaButton.textContent =  siteContent["cta"]["button"]
+
+
+
+//Setting Top Content
+let topContent = document.querySelector('.top-content')
+topContent.children[0].children[0].textContent = siteContent["main-content"]["features-h4"]
+topContent.children[0].children[1].textContent = siteContent["main-content"]["features-content"]
+topContent.children[1].children[0].textContent = siteContent["main-content"]["about-h4"]
+topContent.children[1].children[1].textContent = siteContent["main-content"]["about-content"]
+
+//Setting Bottom Content
+let bottomContent = document.querySelector('.bottom-content')
+bottomContent.children[0].children[0].textContent = siteContent["main-content"]["services-h4"]
+bottomContent.children[0].children[1].textContent = siteContent["main-content"]["services-content"]
+bottomContent.children[1].children[0].textContent = siteContent["main-content"]["product-h4"]
+bottomContent.children[1].children[1].textContent = siteContent["main-content"]["product-content"]
+bottomContent.children[2].children[0].textContent = siteContent["main-content"]["vision-h4"]
+bottomContent.children[2].children[1].textContent = siteContent["main-content"]["vision-content"]
+
+
+
+//Setting Contact Section
+let contactSec = document.querySelector('.contact');
+contactSec.children[0].textContent = siteContent["contact"]["contact-h4"] 
+contactSec.children[1].textContent = siteContent["contact"]["address"] 
+contactSec.children[2].textContent = siteContent["contact"]["phone"] 
+contactSec.children[3].textContent = siteContent["contact"]["email"] 
+
+
+
+//Setting Footer Section
+let footerPL = document.querySelector('footer').children[0]
+footerPL.textContent = siteContent["footer"]["copyright"] 
