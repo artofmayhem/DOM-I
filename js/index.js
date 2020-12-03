@@ -72,41 +72,41 @@ navItems.prepend(seChild);
 
 
 //Setting CTA Section
-const ctaText = document.querySelector('h1')
-ctaText.textContent =  siteContent["cta"]["h1"]
+const ctaText = document.querySelector('h1');
+ctaText.textContent =  siteContent["cta"]["h1"];
 
-const ctaButton = document.querySelector('button')
-ctaButton.textContent =  siteContent["cta"]["button"]
+const ctaButton = document.querySelector('button');
+ctaButton.textContent =  siteContent["cta"]["button"];
 
 
 
 //Setting Top Content
-const topContent = document.querySelector('.top-content')
-topContent.children[0].children[0].textContent = siteContent["main-content"]["features-h4"]
-topContent.children[0].children[1].textContent = siteContent["main-content"]["features-content"]
-topContent.children[1].children[0].textContent = siteContent["main-content"]["about-h4"]
-topContent.children[1].children[1].textContent = siteContent["main-content"]["about-content"]
+const topContent = document.querySelector('.top-content');
+topContent.children[0].children[0].textContent = siteContent["main-content"]["features-h4"];
+topContent.children[0].children[1].textContent = siteContent["main-content"]["features-content"];
+topContent.children[1].children[0].textContent = siteContent["main-content"]["about-h4"];
+topContent.children[1].children[1].textContent = siteContent["main-content"]["about-content"];
 
 //Setting Bottom Content
-const bottomContent = document.querySelector('.bottom-content')
-bottomContent.children[0].children[0].textContent = siteContent["main-content"]["services-h4"]
-bottomContent.children[0].children[1].textContent = siteContent["main-content"]["services-content"]
-bottomContent.children[1].children[0].textContent = siteContent["main-content"]["product-h4"]
-bottomContent.children[1].children[1].textContent = siteContent["main-content"]["product-content"]
-bottomContent.children[2].children[0].textContent = siteContent["main-content"]["vision-h4"]
-bottomContent.children[2].children[1].textContent = siteContent["main-content"]["vision-content"]
+const bottomContent = document.querySelector('.bottom-content');
+bottomContent.children[0].children[0].textContent = siteContent["main-content"]["services-h4"];
+bottomContent.children[0].children[1].textContent = siteContent["main-content"]["services-content"];
+bottomContent.children[1].children[0].textContent = siteContent["main-content"]["product-h4"];
+bottomContent.children[1].children[1].textContent = siteContent["main-content"]["product-content"];
+bottomContent.children[2].children[0].textContent = siteContent["main-content"]["vision-h4"];
+bottomContent.children[2].children[1].textContent = siteContent["main-content"]["vision-content"];
 
 
 
 //Setting Contact Section
 const contactSec = document.querySelector('.contact');
-contactSec.children[0].textContent = siteContent["contact"]["contact-h4"] 
-contactSec.children[1].textContent = siteContent["contact"]["address"] 
-contactSec.children[2].textContent = siteContent["contact"]["phone"] 
-contactSec.children[3].textContent = siteContent["contact"]["email"] 
+contactSec.children[0].textContent = siteContent["contact"]["contact-h4"];
+contactSec.children[1].textContent = siteContent["contact"]["address"]; 
+contactSec.children[2].textContent = siteContent["contact"]["phone"]; 
+contactSec.children[3].textContent = siteContent["contact"]["email"]; 
 
 
 
 //Setting Footer Section
-const footerPL = document.querySelector('footer').children[0]
-footerPL.textContent = siteContent["footer"]["copyright"] 
+const footerPL = document.querySelector('footer').children[0];
+footerPL.textContent = siteContent["footer"]["copyright"]; 
