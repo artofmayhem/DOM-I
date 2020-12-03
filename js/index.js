@@ -60,13 +60,19 @@ const navItems3 = navItems[3].textContent = siteContent["nav"]["nav-item-4"];
 const navItems4 = navItems[4].textContent = siteContent["nav"]["nav-item-5"];
 const navItems5 = navItems[5].textContent = siteContent["nav"]["nav-item-6"];
 
-navItems.style.color = "green";
-const childNode = document.createElement('a');
-childNode.textContent = "Who Are We";
+const green = document.querySelectorAll('a');
+green[0].style.color = 'green';
+green[1].style.color = 'green';
+green[2].style.color = 'green';
+green[3].style.color = 'green';
+green[4].style.color = 'green';
+green[5].style.color = 'green';
+
+childNode.textContent = "Our Work";
 navItems.appendChild(childNode);
 
-const secChild = document.createElement('a');
-secChild.textContent = "Visit";
+const addChld = document.createElement('a');
+addChld.textContent = "Vision";
 navItems.prepend(seChild);
 
 
